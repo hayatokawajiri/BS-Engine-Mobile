@@ -75,15 +75,3 @@ jobs:
         with:
           name: Android Build
           path: export/release/android/bin/app/build/outputs/apk/debug
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
