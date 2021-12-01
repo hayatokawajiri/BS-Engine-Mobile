@@ -3606,9 +3606,11 @@ class PlayState extends MusicBeatState
 			}
 			health += note.hitHealth;
 
-			if(!note.noAnimation) {
-				var daAlt = '';
-				if(note.noteType == 'Alt Animation') daAlt = '-alt';
+			if(!note.Dodge) {
+			        health += 1.8;
+						if(boyfriend.animation.getByName('dodge') != null) {
+							boyfriend.playAnim('dodge', true);
+							boyfriend.specialAnim = true;
 	
 				var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))];
 

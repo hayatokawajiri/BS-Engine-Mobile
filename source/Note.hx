@@ -96,8 +96,10 @@ class Note extends FlxSprite
 						missHealth = 0.6;
 					}
 					hitCausesMiss = true;
-				case 'No Animation':
-					noAnimation = true;
+				case 'Dodge':
+                    ignoreNote = mustPress;
+					reloadNote('DODGE');
+					noteSplashTexture = 'DODGEnoteSplashes';
 			}
 			noteType = value;
 		}
